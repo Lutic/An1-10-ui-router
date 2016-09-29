@@ -11,7 +11,7 @@
 		<th>User</th>
 		<th>Deadline</th>
 	</tr>
-	<tr ng-repeat="task in vm.tasks | orderBy: 'action'">
+	<tr ng-repeat="task in $ctrl.tasks | orderBy: 'action'">
 		<td>{{task.action}}</td>
 		<td>{{task.done}}</td>
 		<td>{{task.userName}}</td>

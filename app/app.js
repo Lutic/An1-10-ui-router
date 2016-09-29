@@ -1,5 +1,5 @@
 (function() {
-'use strict';
+	"use strict";
 
 	angular.module("app", [
 		
@@ -7,6 +7,10 @@
 		"tasks",
 		"users",
 		"userTasks"
-	])
+	]);
+
+	angular.element(document).ready(() => {
+		angular.bootstrap(document, ["app"]);
+	});
 
 })();

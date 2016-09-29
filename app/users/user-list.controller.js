@@ -7,13 +7,13 @@
 	userList.$inject = ["usersSrv"];
 
 	function userList(usersSrv) {
-		var vm = this;
+		var $ctrl = this;
 		
 		init();
 
 		function init() {
 			usersSrv.getData().then(function(data) {
-				vm.users = data;
+				$ctrl.users = data;
 			});
 		}
 	}

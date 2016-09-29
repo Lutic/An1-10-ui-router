@@ -7,14 +7,14 @@
 	addTask.$inject = ["usersSrv", "tasksSrv"];
 	
 	function addTask(usersSrv, taskSrv) {
-		var vm = this;
+		var $ctrl = this;
 		
 		init();
 
 		function init() {
-			vm.addNewTask = addNewTask;
-			usersSrv.getData().then(function(data) {
-				vm.users = data;
+			$ctrl.addNewTask = addNewTask;
+			usersSrv.getData().then( (data) => {
+				$ctrl.users = data;
 			});
 		}
 
@@ -22,7 +22,7 @@
 			taskSrv.add(taskToAdd);
 			taskToAdd.action = "";
 			taskToAdd.user = "";
-		};
+		}
 	}
 
 })();
