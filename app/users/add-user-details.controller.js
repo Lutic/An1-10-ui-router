@@ -3,9 +3,9 @@
 
 	angular
 		.module("users")
-		.controller("addUserDetails", addUserDetails);
+		.controller("AddUserDetails", AddUserDetails);
 
-	function addUserDetails() {
+	function AddUserDetails() {
 		
 	}
 

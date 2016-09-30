@@ -2,9 +2,9 @@
 
 	angular
 		.module("users")
-		.controller("editUser", editUser);
+		.controller("EditUser", EditUser);
 
-	function editUser() {
+	function EditUser() {
 		
 	}
 

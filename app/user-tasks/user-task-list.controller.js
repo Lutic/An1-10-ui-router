@@ -3,9 +3,9 @@
 
 	angular
 		.module("userTasks")
-		.controller("userTaskList", userTaskList);
+		.controller("UserTaskList", UserTaskList);
 
-	function userTaskList() {
+	function UserTaskList() {
 		
 	}
 

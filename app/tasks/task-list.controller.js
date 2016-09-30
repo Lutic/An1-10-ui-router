@@ -2,11 +2,11 @@
 
 	angular
 		.module("tasks")
-		.controller("taskList", taskList);
+		.controller("TaskList", TaskList);
 
-	taskList.$inject = ["tasksSrv"];
+	TaskList.$inject = ["tasksSrv"];
 	
-	function taskList(tasksSrv) {
+	function TaskList(tasksSrv) {
 		var $ctrl = this;
 
 		init();

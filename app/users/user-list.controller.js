@@ -2,11 +2,11 @@
 
 	angular
 		.module("users")
-		.controller("userList", userList);
+		.controller("UserList", UserList);
 
-	userList.$inject = ["usersSrv"];
+	UserList.$inject = ["usersSrv"];
 
-	function userList(usersSrv) {
+	function UserList(usersSrv) {
 		var $ctrl = this;
 		
 		init();

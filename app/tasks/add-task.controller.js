@@ -2,11 +2,11 @@
 
 	angular
 		.module("tasks")
-		.controller("addTask", addTask);
+		.controller("AddTask", AddTask);
 
-	addTask.$inject = ["usersSrv", "tasksSrv"];
+	AddTask.$inject = ["usersSrv", "tasksSrv"];
 	
-	function addTask(usersSrv, taskSrv) {
+	function AddTask(usersSrv, taskSrv) {
 		var $ctrl = this;
 		
 		init();
