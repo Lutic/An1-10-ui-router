@@ -7,12 +7,12 @@
 	TaskList.$inject = ["tasksSrv"];
 	
 	function TaskList(tasksSrv) {
-		var $ctrl = this;
+		let $ctrl = this;
 
 		init();
 
 		function init() {
-			$ctrl.tasks = tasksSrv.getAllTasks();
+			$ctrl.tasks = tasksSrv.getAllTasks()
 		}
 	}
 

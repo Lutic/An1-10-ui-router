@@ -4,18 +4,17 @@
 		.module("tasks")
 		.controller("AddTask", AddTask);
 
-	AddTask.$inject = ["usersSrv", "tasksSrv"];
+	AddTask.$inject = ["tasksSrv", "usersSrv"];
 	
-	function AddTask(usersSrv, taskSrv) {
-		var $ctrl = this;
+	function AddTask(taskSrv, usersSrv) {
+		let $ctrl = this;
 		
 		init();
 
 		function init() {
 			$ctrl.addNewTask = addNewTask;
-			usersSrv.getData().then( (data) => {
-				$ctrl.users = data;
-			});
+			usersSrv.getData()
+				.then((users) => { $ctrl.users = users });
 		}
 
 		function addNewTask(taskToAdd) {
